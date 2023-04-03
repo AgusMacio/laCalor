@@ -2,6 +2,7 @@ import React from 'react'
 import '../components/principal.css'
 import fondo from '../components/lacalorfondo.png'
 
+
 const Principal = () => {
   return (
     <main>
@@ -16,7 +17,7 @@ const Principal = () => {
             </div>
         </section>
         <section>
-            
+
         </section>
     </main>
   )
