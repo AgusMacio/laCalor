@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+header {
+    background-color: rgb(17, 10, 10);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+  }
+  
+  .flex-container {
+    display: flex;
+    align-items: center;
+    color: rgb(228, 70, 12);
+  }
+  h1 {
+    font-size: clamp(15px, 2.5vw, 22px);
+  }
+  .logo {
+    height: 80px;
+  }
+  .flex-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 1rem;
+    gap: 10px;
+    color: rgb(228, 70, 12);
+  }
+  .flex-list li {
+    list-style: none;
+  }
+
+  
+  @media screen and (max-width: 768px) {
+    header {
+      width: 125vw;
+      background-color: rgb(17, 10, 10);
+    }
+  
+    .flex-list {
+      display: flex;
+      flex-wrap: nowrap;
+        align-items: center;
+      margin-right: 1rem;
+    }
+    .logo {
+      height: 50px;
+    }
+    .flex-list li{
+        font-size: 14px;
+    }
+    
+  }

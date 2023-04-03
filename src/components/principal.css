@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(228, 70, 12);
+
+}
+
+
+.principalEvent{
+    background-image: url(../components/lacalorfondo.png);
+    background-color: rgb(46, 35, 35);
+    background-blend-mode: soft-light;
+    height: 70vh;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.sape{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    color: rgb(20, 12, 12);
+}
+
+@media screen and (max-width: 768px){
+
+    .principalEvent{
+        background-image:   url(../components/lacalorfondo.png);
+        height: 40vh;
+        width: 125vw;
+        background-position: 70% 70%;
+        display: flex;
+        justify-content: center;
+        
+    }
+
+}
