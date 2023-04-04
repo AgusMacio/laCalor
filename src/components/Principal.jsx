@@ -9,10 +9,10 @@ const Principal = () => {
         <section className='principalEvent'>
             <div className='sape'>
                 <h1>
-                    LA CALOR 
+                    FIESTA CALOR
                 </h1>
                 <h2>
-                    EL PARTY DE TUS SUEÑOS
+                    BIENVENIDXS AL PARTY
                 </h2>
             </div>
         </section>

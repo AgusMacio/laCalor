@@ -8,25 +8,27 @@
     color: rgb(228, 70, 12);
 
 }
-
+section{
+    height: 400px;
+}
 
 .principalEvent{
-    background-image: url(../components/lacalorfondo.png);
-    background-color: rgb(46, 35, 35);
+    background-image: url("../components/lacalorfondo.png");
+    background-position: 69% 70%;
+    background-color: rgb(63, 47, 47);
     background-blend-mode: soft-light;
-    height: 70vh;
-    background-position: center center;
-    display: flex;
-    justify-content: center;
-    
+    height: 50vh;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .sape{
     display: flex;
+    height: 100%;
     flex-direction: column;
     text-align: center;
     justify-content: center;
-    color: rgb(20, 12, 12);
+    
 }
 
 @media screen and (max-width: 768px){
@@ -34,7 +36,7 @@
     .principalEvent{
         background-image:   url(../components/lacalorfondo.png);
         height: 40vh;
-        width: 125vw;
+        width: 178%;
         background-position: 70% 70%;
         display: flex;
         justify-content: center;
