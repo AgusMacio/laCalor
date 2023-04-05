@@ -1,0 +1,106 @@
+.eventos-section {
+  background-image: url("../../assets/img/fondo2.jpg");
+  background-position: 69% 70%;
+  background-color: rgb(63, 47, 47);
+  background-blend-mode: soft-light;
+  min-height: 100vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: fit-content;
+}
+
+.eventos-section > h1 {
+  text-align: center;
+  font-size: 40px;
+  color: white;
+}
+
+.eventos-container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.evento {
+  width: 100%;
+  height: fit-content;
+  max-width: 400px;
+  border-radius: 10px;
+  margin: 10px;
+  background-color: #181717;
+  color: rgb(228, 70, 12);
+}
+
+.parte-arriba {
+  background: rgb(235, 68, 50);
+  color: white;
+  padding: 10px;
+}
+
+.parte-abajo {
+  padding: 10px;
+}
+
+#evento-fecha {
+  font-size: 38px;
+  font-weight: 800;
+}
+
+#evento-zona {
+  font-size: 2em;
+}
+
+#evento-nombre {
+  font-weight: 800;
+  font-size: 1.3em;
+}
+
+#evento-direccion {
+  font-weight: 800;
+  font-size: 1.3em;
+}
+
+#botones-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#botones-container button {
+  margin: 10px 10px 0 10px;
+  background: linear-gradient(
+    180deg,
+    rgba(192, 20, 2, 1) 0%,
+    rgba(166, 13, 9, 1) 53%,
+    rgba(99, 2, 14, 1) 100%
+  );
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .eventos-section {
+  }
+  .eventos-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  .evento {
+    width: 100%;
+    border-radius: 10px;
+    margin: 10px;
+    color: rgb(228, 70, 12);
+  }
+}

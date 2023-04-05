@@ -1,0 +1,27 @@
+.principalEvent {
+  background-image: url("../../assets/img/lacalorfondo.png");
+  background-position: 69% 70%;
+  background-color: rgb(63, 47, 47);
+  background-blend-mode: soft-light;
+  height: calc(100vh - 80px);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.sape {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .principalEvent {
+    background-image: url("../../assets/img/lacalorfondo.png");
+    background-position: 70% 70%;
+    display: flex;
+    justify-content: center;
+  }
+}
