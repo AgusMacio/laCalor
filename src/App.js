@@ -1,34 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
-import { useState } from 'react';
-import axios, { Axios } from 'axios';
-import Eventos from '../src/components/Eventos'
+import './App.css'
+import {useState, useEffect} from 'react'
+import axios from 'axios'
 
+const App = () => {
 
+  const [eventos, setEventos] = useState(null);
 
-function App() {
-  const [eventos, setEventos] = useState([]);
-
-  const pegarApi = async () => {
-
-
+  const getData = async () => {
     try {
-      const { data } = await axios.get('https://calor.onrender.com/api/eventos')
+      const {data} = await axios.get('https://calor.onrender.com/api/eventos');
+      console.log(data.eventos)
       setEventos(data.eventos)
     } catch (error) {
-      console.log(error);
+      console.log(error)
+      alert('ocurrio un error')
     }
   }
-  return (
-    <div className="App">
-      <div className='data'>
-        {
-          eventos.map((eventos) => (
-        <Eventos data={eventos} /> 
-        )) }
-      </div>
-    </div>
-  );
+
+  useEffect(() => {getData()}, [])
+
+  return (<div>
+    
+    
+    {!eventos ? <h1>CARGANDO EVENTOS</h1> : <div>
+      {eventos.map(evento => {
+        return (<div key={evento._id}>
+          <h1>evento.nombre</h1>
+          <h4>evento.fecha</h4>
+        </div>)
+      })}
+    </div>}
+    </div>)
+
 }
 
 export default App;

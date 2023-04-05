@@ -1,6 +1,7 @@
 import React from 'react'
 import '../components/principal.css'
 import fondo from '../components/lacalorfondo.png'
+import App from '../App'
 
 
 const Principal = () => {
